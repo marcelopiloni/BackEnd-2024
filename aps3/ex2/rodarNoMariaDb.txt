@@ -1,0 +1,12 @@
+
+// schema.sql
+CREATE DATABASE IF NOT EXISTS traducao;
+USE traducao;
+
+CREATE TABLE IF NOT EXISTS traducoes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    texto_original TEXT NOT NULL,
+    texto_traduzido TEXT NOT NULL,
+    idioma VARCHAR(10) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
